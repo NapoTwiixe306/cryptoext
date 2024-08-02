@@ -5,6 +5,8 @@ import Navbar from '@/src/Components/Navbar';
 import Image from 'next/image';
 import Ext from '../src/img/extensionDesign.png';
 import CardService from '@/src/Components/Card/CardService';
+import SwitchInfo from "@/src/Components/SwitchInfo/SwitchInfo";
+
 export default function Page() {
   return (
     <>
@@ -35,6 +37,9 @@ export default function Page() {
           </div>
           <div>
             <CardService/>
+          </div>
+          <div>
+            <SwitchInfo/>
           </div>
           
         </main>
