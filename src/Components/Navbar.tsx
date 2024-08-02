@@ -24,27 +24,32 @@ const Navbar: React.FC = () => {
       <div className="flex items-center justify-between w-full h-20 p-5 mx-auto">
         <div className="flex items-center">
           <h1 className="flex gap-2 space-x-2 text-2xl font-bold text-black dark:text-gray-100">
-            DSM
+            JMCorp/Crypto
           </h1>
         </div>
 
         <div className="items-center hidden space-x-6 md:flex">
-          <ul className="flex space-x-6">
+          <ul className="flex space-x-9">
             <li>
               <Link href="/pages/Docs">
-                <span className="text-lg font-bold text-black cursor-pointer dark:text-gray-100">Composants</span>
+                <span className="text-lg font-bold text-black cursor-pointer dark:text-gray-100">Blockchain</span>
               </Link>
             </li>
             <li>
               <Link href="pages/Dashboard">
-                <span className="text-lg font-bold text-black cursor-pointer dark:text-gray-100">Dashboard</span>
+                <span className="text-lg font-bold text-black cursor-pointer dark:text-gray-100">Extension</span>
+              </Link>
+            </li>
+            <li>
+              <Link href="pages/Dashboard">
+                <span className="text-lg font-bold text-black cursor-pointer dark:text-gray-100">Price</span>
               </Link>
             </li>
           </ul>
         </div>
         <div className="hidden gap-10 lg:flex">
           <Link href="/auth/register">
-            <span className="flex items-center p-2 px-5 text-lg font-bold text-black rounded-md cursor-pointer bg-customBlue dark:text-black">Register <FaArrowRight className="w-4 h-4 ml-2 text-black dark:text-black"/></span>
+            <span className="flex items-center p-2 px-5 text-lg font-bold text-black rounded-md cursor-pointer bg-customBlue dark:text-white">Login <FaArrowRight className="w-4 h-4 ml-2 text-black dark:text-white"/></span>
           </Link>
           <button onClick={toggleDarkMode}>
             {darkMode ? <FaSun className="w-6 h-6 text-black dark:text-gray-100" /> : <FaMoon className="w-6 h-6 text-black dark:text-gray-100" />}
@@ -63,6 +68,8 @@ const Navbar: React.FC = () => {
           </button>
         </div>
       </div>
+      <div className='w-auto h-[3px] bg-[linear-gradient(90deg,_rgba(255,_255,_255,_0.00)_0%,_rgba(54,_124,_255,_0.49)_50%,_rgba(255,_255,_255,_0.00)_100%)]'></div>
+
       {isOpen && (
         <div className="bg-gray-100 dark:bg-gray-900 md:hidden">
           <ul className="flex flex-col items-start p-5 space-y-2">
@@ -80,7 +87,7 @@ const Navbar: React.FC = () => {
           <ul className="flex flex-col items-start p-5 space-y-2">
             <li>
               <Link href="/auth/signin">
-                <span className="text-lg text-black cursor-pointer dark:text-gray-100" onClick={() => setIsOpen(false)}>Register</span>
+                <span className="text-lg text-black cursor-pointer dark:text-gray-100" onClick={() => setIsOpen(false)}>Login</span>
               </Link>
             </li>
           </ul>

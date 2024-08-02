@@ -6,7 +6,7 @@ import {Providers} from "@/app/providers";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'BoilerPlate - JMCorp/Boilerplate',
+  title: 'CryptoExtension - JMCorp/Crypto',
   description: 'Temaplte Nextjs made by NapoTwiixe',
 }
 

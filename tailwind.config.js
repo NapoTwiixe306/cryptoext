@@ -12,7 +12,12 @@ const config = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        titleSpanText: "#00C2FF",
+        hScreenDiv: "50vh",
+      },
+    },
   },
   darkMode: "class",
   plugins: [nextui()]

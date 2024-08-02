@@ -2,12 +2,9 @@
 import React from 'react';
 import './globals.css';
 import Navbar from '@/src/Components/Navbar';
-import Badge from '@/src/Components/Badges/Badges';
 import Image from 'next/image';
-import bg from '../src/img/Dashboard.jpg';
-import {SecondTextWithImage, TextWithImage} from '@/src/Components/TextWithCard/TextWithImage';
+import Ext from '../src/img/extensionDesign.png';
 import CardService from '@/src/Components/Card/CardService';
-
 export default function Page() {
   return (
     <>
@@ -15,30 +12,31 @@ export default function Page() {
         <header className="bg-white dark:bg-gray-900">
           <Navbar />
         </header>
-        <main className="p-5">
-          <section className="flex flex-col items-center justify-center gap-5 mt-16">
-            <Badge />
-            <h1 className='text-6xl font-semibold text-black dark:text-white'>Build your SaaS in seconds</h1>
-            <p className='text-black dark:text-white'>This template demonstrates most of NapoPlate&#39;s components. It&#39;s a great starting point to build your own SaaS.</p>
-            <div className='mt-14'>
-              <Image className='rounded-xl' src={bg} alt='Dashboard background' width={1375} />
+        <main className="flex flex-col items-center justify-center min-h-screen p-5">
+        <div className="flex flex-col items-center justify-center w-full h-full mt-8 max-w-7xl md:flex-row">
+            <div className="flex flex-col p-4 md:p-0">
+              <p className="mb-5 text-black dark:text-white">CRYPTO MANAGER</p>
+              <h1 className="w-full text-4xl font-bold text-black dark:text-white md:text-6xl md:w-10/12">
+                <span className="text-titleSpanText dark:text-titleSpanText">Simplifiez</span> votre gestion grâce à{' '}
+                <span className="text-titleSpanText dark:text-titleSpanText">CryptoExtension</span>
+              </h1>
+              <p className="w-full mt-4 text-xl text-black dark:text-white md:w-8/12 md:text-2xl md:mt-9">
+                Entièrement développé sur la blockchain Ethereum, profitez d’un projet innovant et rare
+              </p>
+              <div className="w-full h-[3px] bg-gradient-to-r from-transparent via-blue-500 to-transparent mt-8 md:w-[700px] md:mt-16"></div>
+              <div className="flex flex-col gap-4 mt-8 md:flex-row md:gap-12 md:mt-10">
+                <button className="px-8 py-2 text-black border-2 rounded-md border-titleSpanText dark:text-white md:px-24">Dashboard</button>
+                <button className="px-8 py-2 text-black border-2 rounded-md border-titleSpanText dark:text-white md:px-16">Download Extension</button>
+              </div>
             </div>
-          </section>
-
-          {/* First Section */}
-          <section className="flex flex-col items-center justify-center mt-96">
-            <TextWithImage/>
-          </section>
-
-          {/* Second Section */}
-          <section className="flex flex-col items-center justify-center mt-52">
-            <SecondTextWithImage/>
-          </section>
-
-          {/*Card Section*/}
-          <section className='flex items-center justify-center mt-10'>
+            <div className="mt-8 border-2 border-white rounded-[15px] md:mt-0 md:ml-8">
+              <Image src={Ext} alt="" width={500} height={650} />
+            </div>
+          </div>
+          <div>
             <CardService/>
-          </section>
+          </div>
+          
         </main>
       </div>
     </>

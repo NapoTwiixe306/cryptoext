@@ -1,34 +1,16 @@
 // components/servicesData.ts
 export const services = [
     {
-      title: 'Easy to use',
-      description: 'Id laborum laboris duis nostrud excepteur ut velit nulla magna Lorem proident non.',
-      icon: '☀️', 
+      title: 'Dashboard Manager',
+      description: "Tradez vos cryptomonnaies facilement et rapidement avec notre extension. Bénéficiez de frais réduits et d'une exécution instantanée de vos ordres.",
     },
     {
-      title: 'Reliable',
-      description: 'Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.',
-      icon: '✔️',
+      title: 'Stack',
+      description: 'Profitez de notre fonction de stacking pour générer des revenus passifs. Stackez vos cryptomonnaies choisissez la durée qui vous convient',
     },
     {
-      title: 'Secure',
-      description: 'Proident nostrud excepteur sint ut culpa consectetur aute adipisicing non anim ullamco.',
-      icon: '🔒',
-    },
-    {
-      title: 'Fast',
-      description: 'Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod sint aliquip nisi voluptate.',
-      icon: '🚀',
-    },
-    {
-      title: 'Affordable',
-      description: 'Reprehenderit fugiat elit in do ipsum ut pariatur.',
-      icon: '💵',
-    },
-    {
-      title: 'Scalable',
-      description: 'Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.',
-      icon: '📈',
-    },
+      title: 'View price',
+      description: "Consultez les prix en temps réel de n'importe quelle cryptomonnaie disponible sur Binance. Restez informé des fluctuations du marché ",
+    }
   ]
   
